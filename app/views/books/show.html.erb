@@ -12,8 +12,8 @@
   transition: width 300ms ease-out, opacity 150ms 150ms ease-in;
   transform: translate3d(0, 0, 0);
 }</style>
-    
-    
+
+
 
 
     <link rel="stylesheet" media="all" href="/assets/application-d12397cbc3a266ce5a99f7b588223090c55ca04a439953bb5f9304395de93fc3.css" data-turbolinks-track="reload">
@@ -23,13 +23,25 @@
 </head>
 <body>
     <p id="notice"></p>
+<div>
+ <span>
+ <strong>Title:</strong>
+ </span>
 
-<%= @book.title %>
-<%= @book.body %>
+ <%= @book.title %>
+</div>
 
-<a class="/edit" href="/books/id/edit">Edit</a>
+<div>
+ <span>
+  <strong>Body:</strong>
+ </span>
+
+ <%= @book.body %>
+</div>
+
+<%= link_to "Edit", edit_book_path(@book.id) %>
   |
-<a class="back" href="/books">Back</a>
+<%= link_to "Back", books_path %>
 
 </body>
 </html>
