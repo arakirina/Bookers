@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 2021_12_08_102125) do
     t.text "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    # ""の部分が.の後に使える、ｉｄも使える
   end
 
 end
