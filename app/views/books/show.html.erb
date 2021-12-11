@@ -5,7 +5,7 @@
  <%= flash[:notice] %>
   </p>
  <% end %>
- 
+
  <% if flash[:alert] %>
   <p id="alert">
  <%= flash[:alert] %>
@@ -32,6 +32,7 @@
 <%= link_to "Edit", edit_book_path(@book.id) %>
   |
 <%= link_to "Back", books_path %>
+
 
 </body>
 </html>
